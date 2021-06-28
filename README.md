@@ -1,6 +1,6 @@
 # Microfrontends using vue and single-spa
 
-##Overview
+## Overview
 A micro frontend architecture with multiple Vue.js apps using single-spa. Note that you can replace Vue with your framework of choice.
 
 ## Goals
