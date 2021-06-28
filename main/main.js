@@ -17,8 +17,8 @@ const apps = [
 ]
 
 Promise.all([
-  System.import('pubsub-js'),
-  System.import('snackbar')
+  System.import('vue'),
+  System.import('vue-router')
 ]).then(() => {
   apps.forEach(app =>  registerApplication(app) );
   start();
