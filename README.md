@@ -16,5 +16,16 @@ A micro frontend architecture with multiple Vue.js apps using single-spa. Note t
 ## Steps to run the project
 
 1. run `npm i` in each applications (i.e main, app-one, app-two)
-2. run `npm run serve` in each project.
-3. The app should be hosted at http://localhost:5000/
+2. create `local-importmap.json` in main app's root directory with following content: 
+```json
+  {
+    "imports": {
+      "main": "http://localhost:5000/main.js",
+      "app-one": "http://localhost:8080/app.js",
+      "app-two": "http://localhost:8081/app.js"
+    }
+  }
+```
+4. run `npm run serve` in each application (make sure: app-one is running on port `8080` and app-two is running on `8081`).
+5. The app should be hosted at http://localhost:5000/
+
