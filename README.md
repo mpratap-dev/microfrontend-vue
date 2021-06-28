@@ -9,7 +9,7 @@ A micro frontend architecture with multiple Vue.js apps using single-spa. Note t
 3. Communication between sub-applications is possible.
 
 ## Implementation
-![architecture](https://github.com/mpratap-dev/microfrontend-vue/blob/master/mfe.png?raw=true)
+![architecture](https://github.com/mpratap-dev/microfrontend-vue/blob/master/mfe.png?raw=true "In a nutshell: vendor dependencies get loaded from a CDN, app 1 and 2 bundles get loaded from S3/GCS and our main app composes/bundles it all together.")
 
 ## Steps to run the project
 
